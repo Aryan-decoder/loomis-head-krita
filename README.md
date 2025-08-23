@@ -17,9 +17,8 @@ A small Krita plugin that renders an adjustable Loomis head as clean SVG vectors
 
 ## Installation
 
-- Download the Plugin <here>
+- Download the newest loomis_head-...zip) [here](https://github.com/lm0ss/loomis-head-krita/releases) 
 - In Krita: Tools → Scripts → Import Plugin From File.
-- Select `loomis_head.zip`.
 - Enable the plugin, restart Krita.
 
 ## Usage
