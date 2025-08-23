@@ -48,3 +48,8 @@ Due to technical limitations, you should not move the head while the settings wi
 - Actions:
   - Reset Rotation
   - Save and close window
+
+# Preview
+
+(Click for a video)
+[![Click for video](docs/screenshot.jpg)](docs/demo.mp4)
