@@ -1,0 +1,6 @@
+.venv
+.vscode
+loomis_head.egg-info
+.ruff_cache
+build
+dist

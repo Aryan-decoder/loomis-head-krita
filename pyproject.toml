@@ -1,0 +1,39 @@
+[project]
+name = "loomis-head"
+version = "0.1.0"
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = [
+  "black>=24.0",
+  "ruff>=0.5",
+  "deadcode>=2.4.1"
+]
+
+# Tooling config
+[tool.black]
+line-length = 140
+target-version = ["py37"]
+
+[tool.ruff]
+line-length = 140
+select = ["E", "F", "I", "N", "UP", "B"]
+fix = true
+src = ["loomis_head"]
+exclude = ["build.py", "euclid.py"]
+
+[tool.deadcode]
+exclude = ["loomis_head/euclid.py", "build", ".venv"]
+ignore-names = ["setup", "createActions", "canvasChanged", "paintEvent"]
+ignore-names-in-files = ["migrations"]
+
+[tool.ruff.pep8-naming]
+ignore-names = [
+  "mousePressEvent", "mouseReleaseEvent", "mouseMoveEvent",
+  "paintEvent",  "createActions", "canvasChanged"
+]
+
+# Minimal build backend so pip can process this project
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
